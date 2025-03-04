@@ -23,8 +23,10 @@
   </head>
 
   <body>
-    <main class="flex">
+    <main class="flex-col bg-gray-950">
+      <%= render 'layouts/navbar' %>
       <%= yield %>
+      <%= render 'layouts/footer' %>
     </main>
   </body>
 </html>
