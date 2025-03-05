@@ -23,9 +23,104 @@
   </head>
 
   <body>
-    <main class="flex-col bg-gray-950">
+    <main class="flex-col body">
       <%= render 'layouts/navbar' %>
-      <%= yield %>
+      <div class="flex mx-7 my-4">
+
+        <aside class="w-1/4 bg-gray-900 p-4 rounded-2xl mx-4 text-white" style="background-color: #181D28;">
+          <h2 class="text-green-400 font-bold text-xl mb-4" style="color: #15AF15;">Competition</h2>
+          <ul class="space-y-2">
+            <li class="bg-gradient-to-l from-green-200 to-green-500 px-3 py-2 rounded-xl text-black" style="background: linear-gradient(to right, #15AF15, #CEFFCE);">
+              <img src="<%= asset_path('liga1-icon.png') %>" alt="Liga 1" class="inline-block w-6 h-6 mr-2 rounded-full items-center justify-center bg-center">Liga 1 Indonesia
+            </li>
+            <li class="px-3 py-2 hover:bg-gray-700 rounded">
+              <img src="<%= asset_path('liga2-icon.png') %>" alt="Liga 2" class="inline-block w-6 h-6 mr-2 rounded-full items-center justify-center bg-center">Liga 2 Indonesia
+            </li>
+            <li class="px-3 py-2 hover:bg-gray-700 rounded">
+              <img src="<%= asset_path('epau16-icon.png') %>" alt="EPL U16" class="inline-block w-6 h-6 mr-2 rounded-full">EPA U16 2024/2025
+            </li>
+            <li class="px-3 py-2 hover:bg-gray-700 rounded">
+              <img src="<%= asset_path('fifa-wc-icon.png') %>" alt="World Cup" class="inline-block w-6 h-6 mr-2 rounded-full">FIFA World Cup 2022
+            </li>
+          </ul>
+
+          <span class="flex items-end justify-end text-right pb-0 mb-0" style="color: #15AF15;"> see more </span>
+          <hr class="mb-4 border-1 border-white">
+
+          <h2 class="text-green-400 font-bold text-xl mb-4" style="color: #15AF15;">Player</h2>
+          <ul class="space-y-2">
+            <li class="bg-gradient-to-l from-green-200 to-green-500 px-3 py-2 rounded-xl text-black" style="background: linear-gradient(to right, #15AF15, #CEFFCE);">
+              <img src="<%= asset_path('liga1-icon.png') %>" alt="Liga 1" class="inline-block w-6 h-6 mr-2 rounded-full">Dadang Da Silva
+            </li>
+            <li class="px-3 py-2 hover:bg-gray-700 rounded">
+              <img src="<%= asset_path('liga1-icon.png') %>" alt="Liga 2" class="inline-block w-6 h-6 mr-2 rounded-full">Sir Alex
+            </li>
+            <li class="px-3 py-2 hover:bg-gray-700 rounded">
+              <img src="<%= asset_path('epau16-icon.png') %>" alt="EPL U16" class="inline-block w-6 h-6 mr-2 rounded-full">Ci Ciro Ciros
+            </li>
+          </ul>
+
+          <span class="flex items-end justify-end text-right pb-0 mb-0" style="color: #15AF15;"> see more </span>
+          <hr class="mb-4 border-1 border-white">
+
+          <h2 class="text-green-400 font-bold text-xl mb-4" style="color: #15AF15;">Club</h2>
+          <ul class="space-y-2">
+            <li class="bg-gradient-to-l from-green-200 to-green-500 px-3 py-2 rounded-xl text-black" style="background: linear-gradient(to right, #15AF15, #CEFFCE);">
+              <img src="<%= asset_path('persija.png') %>" alt="Persija" class="inline-block w-6 h-6 mr-2 rounded-full">Persija
+            </li>
+            <li class="px-3 py-2 hover:bg-gray-700 rounded">
+              <img src="<%= asset_path('madura-fc.png') %>" alt="Liga 2" class="inline-block w-6 h-6 mr-2 rounded-full">Madura United
+            </li>
+            <li class="px-3 py-2 hover:bg-gray-700 rounded">
+              <img src="<%= asset_path('psm-makasar.png') %>" alt="EPL U16" class="inline-block w-6 h-6 mr-2 rounded-full">PSM Makasar
+            </li>
+          </ul>
+
+          <span class="flex items-end justify-end text-right pb-0 mb-0" style="color: #15AF15;"> see more </span>
+          <hr class="mb-4 border-1 border-white">
+          
+        </aside>
+      
+        <%= yield %>
+
+        <aside class="w-3/8 bg-gray-900 p-4 rounded-2xl mx-4 text-white" style="background-color: #181D28;">
+          <h2 class="text-xl font-bold mb-4">Trending New</h2>
+          
+          <!-- Main Featured News -->
+          <div class="relative">
+            <img src="<%= asset_path('premier-banner.png') %>" alt="Main News Image" class="rounded-lg w-full h-48 object-cover">
+            <h3 class="mt-2 text-lg font-bold">Kombinasi Saka dan Ødegaard: Kunci Serangan Mematikan Arsenal</h3>
+            <p class="text-gray-400 text-sm">21 November 2024</p>
+          </div>
+
+          <!-- List of Other News -->
+          <div class="mt-4 space-y-4">
+            <div class="flex items-center space-x-3">
+              <img src="<%= asset_path('premier-banner.png') %>" alt="News Image" class="w-12 h-12 rounded-md object-cover">
+              <div>
+                <h4 class="text-sm font-semibold">Persib Bandung Siap Menghadapi Rival Abadi di Liga 1 Pekan Ini</h4>
+                <p class="text-gray-400 text-xs">21 November 2024</p>
+              </div>
+            </div>
+            
+            <div class="flex items-center space-x-3">
+              <img src="<%= asset_path('premier-banner.png') %>" alt="News Image" class="w-12 h-12 rounded-md object-cover">
+              <div>
+                <h4 class="text-sm font-semibold">Kembalinya Pemain Persib: Strategi Baru dari Pelatih</h4>
+                <p class="text-gray-400 text-xs">21 November 2024</p>
+              </div>
+            </div>
+            
+            <div class="flex items-center space-x-3">
+              <img src="<%= asset_path('premier-banner.png') %>" alt="News Image" class="w-12 h-12 rounded-md object-cover">
+              <div>
+                <h4 class="text-sm font-semibold">Persib Tak Terkalahkan di 5 Laga Terakhir</h4>
+                <p class="text-gray-400 text-xs">21 November 2024</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
       <%= render 'layouts/footer' %>
     </main>
   </body>

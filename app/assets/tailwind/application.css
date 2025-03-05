@@ -1,1 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 @import "tailwindcss";
+
+.body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #041B1B;
+    color: white;
+}
+
+.sub-menu {     
+  border: 2px solid #0D690D;
+  display: flex;
+  padding: 0.5rem;
+  width: 20%;
+  border-radius: 1rem;
+  color: white;
+  align-items: center;
+}
+
+.sub-menu:hover {
+  background-color: #0D690D;
+  color: white;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.sub-menu img {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    margin: 0.25rem;
+    border-radius: 50%;
+}
+
+.clip-path-custom {
+    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
+}
