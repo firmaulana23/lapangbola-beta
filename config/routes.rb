@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   resources :homepages
   get "match_center/summary", to: "data_centers#summary"
   get "match_center/table", to: "data_centers#table"
+  get "match_center/timeline", to: "data_centers#timeline"
+  get "match_center/player_ts", to: "data_centers#player_ts"
+  get "match_center/article", to: "data_centers#article"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.htmls
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

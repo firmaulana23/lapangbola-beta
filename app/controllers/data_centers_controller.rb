@@ -10,6 +10,14 @@ class DataCentersController < ApplicationController
     @data_centers = DataCenter.all
   end
 
+  def player_ts
+    @data_centers = DataCenter.all
+  end
+
+  def article
+    @data_centers = DataCenter.all
+  end
+
   def index
     @data_centers = DataCenter.all
   end
