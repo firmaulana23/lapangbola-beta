@@ -1,10 +1,9 @@
 module.exports = {
-    theme: {
-      extend: {
-        colors: {
-          "green-index": "#0D690D",
-        },
-      },
+  theme: {
+    extend: {
+      colors: {
+      }
     },
-    plugins: [],
-  }
+  },
+  plugins: [],
+}

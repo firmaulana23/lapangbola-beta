@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-theme="dark">>
   <head>
     <title><%= content_for(:title) || "Lapangbola Beta" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -19,6 +19,8 @@
 
     <%# Includes all stylesheet files in app/assets/stylesheets %>
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application", media: "all", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "toggleDarkMode", defer: true %>
     <%= javascript_importmap_tags %>
   </head>
 
@@ -27,7 +29,7 @@
       <%= render 'layouts/navbar' %>
       <div class="flex mx-7 my-4">
 
-        <aside class="w-1/4 bg-gray-900 p-4 rounded-2xl mx-4 text-white" style="background-color: #181D28;">
+        <aside class="w-1/4 dark:bg-gray-900 bg-white p-4 rounded-2xl mx-4 text-white" style="background-color: #181D28;">
           <h2 class="text-green-400 font-bold text-xl mb-4" style="color: #15AF15;">Competition</h2>
           <ul class="space-y-2">
             <li class="bg-gradient-to-l from-green-200 to-green-500 px-3 py-2 rounded-xl text-black" style="background: linear-gradient(to right, #15AF15, #CEFFCE);">
@@ -83,7 +85,7 @@
       
         <%= yield %>
 
-        <aside class="w-3/8 bg-gray-900 p-4 rounded-2xl mx-4 text-white" style="background-color: #181D28;">
+        <aside class="w-3/8 dark:bg-gray-900 p-4 rounded-2xl mx-4 text-white" style="background-color: #181D28;">
           <h2 class="text-xl font-bold mb-4">Trending New</h2>
           
           <!-- Main Featured News -->
