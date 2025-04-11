@@ -227,3 +227,86 @@
 .rounded-bottom {
   @apply rounded-b-2xl;
 }
+
+
+/*scoreboard*/
+
+.scoreboard-container {
+  @apply flex flex-col pb-1 px-1 rounded-2xl items-center w-full justify-between;
+  background-color: #062D2D;
+  min-height: 47vh;
+}
+
+.scoreboard-header {
+  @apply w-2/3 h-20 bg-green-700 flex items-center justify-center;
+  clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
+}
+
+.scoreboard-header-text {
+  @apply font-bold text-4xl text-white;
+}
+
+.scoreboard-body {
+  @apply flex text-white w-full p-6 rounded-lg gap-8;
+}
+
+.scoreboard-team {
+  @apply flex flex-col items-center mb-4 w-3/8;
+}
+
+.scoreboard-team-info {
+  @apply flex items-center w-full mb-6;
+}
+
+.scoreboard-team-reverse {
+  @apply flex-row-reverse;
+}
+
+.scoreboard-team-name {
+  @apply text-xl font-bold w-2/4;
+}
+
+.scoreboard-logo {
+  @apply w-1/4 flex justify-center items-center;
+}
+
+.scoreboard-logo-img {
+  @apply w-12 h-12;
+}
+
+.scoreboard-score {
+  @apply text-4xl font-bold w-1/4 flex;
+}
+
+.scoreboard-info {
+  @apply flex flex-col text-center items-center w-2/8;
+}
+
+.scoreboard-timer {
+  @apply bg-red-500 px-4 py-2 rounded-lg text-xl font-bold max-w-36 mb-4;
+}
+
+.scoreboard-info-text {
+  @apply flex flex-col text-sm gap-1;
+}
+
+.scoreboard-status {
+  @apply mb-4 font-bold;
+}
+
+.scoreboard-date {
+  @apply font-bold;
+}
+
+.scoreboard-scorers {
+  @apply text-sm;
+}
+
+.scoreboard-footer {
+  @apply bg-[#041B1B] p-4 rounded-b-2xl flex w-full;
+}
+
+.scoreboard-footer span {
+  @apply text-lg font-semibold text-white;
+}
+
