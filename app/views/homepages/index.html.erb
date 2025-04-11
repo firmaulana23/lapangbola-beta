@@ -1,141 +1,142 @@
-<div class="text-white w-full flex-row px-4">
-    <img src="<%= asset_path('premier-banner.png') %>" alt="Home Banner" class="min-w-full h-1/3 object-cover" />
+<div class="homepage">
+  <img src="<%= asset_path('premier-banner.png') %>" alt="Home Banner" class="home-banner" />
 
-    <!-- Match Filters -->
-    <div class="flex justify-between items-center mt-6">
-      <div class="space-x-2">
-        <button class="bg-green-600 px-7 py-2 border-1 rounded-xl dark:border-green-600 hover:bg-green-700">All</button>
-        <button class="bg-green-600 dark:border-green-600 px-7 py-2 border-1 rounded-xl hover:bg-green-700 hover:dark:bg-gray-900">Live</button>
-        <button class="bg-green-600 dark:border-green-600 px-7 py-2 border-1 rounded-xl hover:bg-green-700 hover:dark:bg-gray-900">Finished</button>
-        <button class="bg-green-600 dark:border-green-600 px-7 py-2 border-1 rounded-xl hover:bg-green-700 hover:dark:bg-gray-900">Upcoming</button>
-      </div>
-      <div class="text-white font-bold bg-green-600 dark:bg-green-600 px-7 py-2 rounded-xl"><%= Date.today.strftime("%a, %d %b %Y") %></div>
+  <!-- Match Filters -->
+  <div class="match-filters">
+    <div class="filter-buttons">
+      <button class="filter-button">All</button>
+      <button class="filter-button">Live</button>
+      <button class="filter-button">Finished</button>
+      <button class="filter-button">Upcoming</button>
+    </div>
+    <div class="current-date"><%= Date.today.strftime("%a, %d %b %Y") %></div>
+  </div>
+
+  <!-- Match Section: Liga 1 Indonesia -->
+  <div class="match-section">
+    <div class="section-header">
+      <h2 class="league-title">Liga 1 Indonesia</h2>
     </div>
 
-    <!-- Match Cards -->
-    <div class="w-full flex-col mt-6 space-y-3"> 
-      <div class="py-4">
-        <h2 class="text-green-600 font-bold text-3xl">Liga 1 Indonesia</h2>
+    <!-- Match Card 1 -->
+    <div class="match-card">
+      <div class="match-status">
+        <span>LIVE</span>
+        <span class="match-minute">53'</span>
       </div>
-
-      <div class="w-full flex flex-auto gap-4">
-        <div class="flex bg-green-600 dark:bg-green-900 p-4 rounded-xl w-1/5 justify-center items-center font-family-poppins font-bold"> 
-          <span class="mr-2">LIVE</span>
-          <span class="text-red-600 font-bold">53'</span>
+      <div class="match-info">
+        <p class="team team-left">Persib</p>
+        <p class="team-logo">Logo</p>
+        <div class="score-box">
+          <p>1</p>
+          <p>:</p>
+          <p>1</p>
         </div>
-
-        <div class="flex bg-green-600 dark:bg-green-900 p-1 rounded-xl w-full gap-1">
-          <p class="w-1/3 flex items-center justify-end font-bold">Persib</p>
-          <p class="w-1/5 flex items-center justify-center">Logo</p>
-          <div class="w-1/8 items-center justify-center text-center bg-white my-2 rounded-xl text-black font-bold flex">
-            <p>1</p>
-            <p>:</p>
-            <p>1</p>
-          </div>
-          <p class="w-1/5 flex items-center justify-center">Logo</p>
-          <p class="w-1/3 flex items-center justify-start font-bold">Persija</p>
-        </div>
-      </div>
-
-      <div class="w-full flex flex-auto gap-4">
-        <div class="flex bg-green-600 dark:bg-green-900 p-4 rounded-xl w-1/5 justify-center items-center font-family-poppins font-bold"> 
-          <span class="mr-2">LIVE</span>
-          <span class="text-red-600 font-bold">53'</span>
-        </div>
-
-        <div class="flex bg-green-600 dark:bg-green-900 p-1 rounded-xl w-full gap-1">
-          <p class="w-1/3 flex items-center justify-end font-bold">Persib Bandung</p>
-          <p class="w-1/5 flex items-center justify-center">Logo</p>
-          <div class="w-1/8 items-center justify-center text-center bg-white my-2 rounded-xl text-black font-bold flex">
-            <p>1</p>
-            <p>:</p>
-            <p>1</p>
-          </div>
-          <p class="w-1/5 flex items-center justify-center">Logo</p>
-          <p class="w-1/3 flex items-center justify-start font-bold">Persija Jakarta</p>
-        </div>
-      </div>
-
-      <div class="w-full flex flex-auto gap-4">
-        <div class="flex bg-green-600 dark:bg-green-900 p-4 rounded-xl w-1/5 justify-center items-center font-family-poppins font-bold"> 
-          <span class="mr-2">LIVE</span>
-          <span class="text-red-600 font-bold">53'</span>
-        </div>
-
-        <div class="flex bg-green-600 dark:bg-green-900 p-1 rounded-xl w-full gap-1">
-          <p class="w-1/3 flex items-center justify-end font-bold">Persib Bandung</p>
-          <p class="w-1/5 flex items-center justify-center">Logo</p>
-          <div class="w-1/8 items-center justify-center text-center bg-white my-2 rounded-xl text-black font-bold flex">
-            <p>1</p>
-            <p>:</p>
-            <p>1</p>
-          </div>
-          <p class="w-1/5 flex items-center justify-center">Logo</p>
-          <p class="w-1/3 flex items-center justify-start font-bold">Persija Jakarta</p>
-        </div>
+        <p class="team-logo">Logo</p>
+        <p class="team team-right">Persija</p>
       </div>
     </div>
-    
-    <div class="w-full flex-col mt-6 space-y-3">
-      <div class="py-4">
-        <h2 class="text-green-600 font-bold text-3xl">Liga 2 Indonesia</h2>
-      </div>
-      
-      <div class="w-full flex flex-auto gap-4">
-        <div class="flex bg-green-600 dark:bg-green-900 p-4 rounded-xl w-1/5 justify-center items-center font-family-poppins font-bold"> 
-          <span class="mr-2">LIVE</span>
-          <span class="text-red-600 font-bold">53'</span>
-        </div>
 
-        <div class="flex bg-green-600 dark:bg-green-900 p-1 rounded-xl w-full gap-1">
-          <p class="w-1/3 flex items-center justify-end font-bold">Persib Bandung</p>
-          <p class="w-1/5 flex items-center justify-center">Logo</p>
-          <div class="w-1/8 items-center justify-center text-center bg-white my-2 rounded-xl text-black font-bold flex">
-            <p>1</p>
-            <p>:</p>
-            <p>1</p>
-          </div>
-          <p class="w-1/5 flex items-center justify-center">Logo</p>
-          <p class="w-1/3 flex items-center justify-start font-bold">Persija Jakarta</p>
-        </div>
+    <!-- Match Card 2 (same structure) -->
+    <div class="match-card">
+      <div class="match-status">
+        <span>LIVE</span>
+        <span class="match-minute">53'</span>
       </div>
-      
-      <div class="w-full flex flex-auto gap-4">
-        <div class="flex bg-gray-900 p-4 rounded-xl w-1/5 justify-center items-center font-family-poppins font-bold" > 
-          <span class="mr-2">Finished</span>
-          <span class="text-red-600 font-bold"></span>
+      <div class="match-info">
+        <p class="team team-left">Persib Bandung</p>
+        <p class="team-logo">Logo</p>
+        <div class="score-box">
+          <p>1</p>
+          <p>:</p>
+          <p>1</p>
         </div>
-
-        <div class="flex bg-gray-900 p-1 rounded-xl w-full gap-1">
-          <p class="w-1/3 flex items-center justify-end font-bold">Persib Bandung</p>
-          <p class="w-1/5 flex items-center justify-center">Logo</p>
-          <div class="w-1/8 items-center justify-center text-center bg-white my-2 rounded-xl text-black font-bold flex">
-            <p>1</p>
-            <p>:</p>
-            <p>1</p>
-          </div>
-          <p class="w-1/5 flex items-center justify-center">Logo</p>
-          <p class="w-1/3 flex items-center justify-start font-bold">Persija Jakarta</p>
-        </div>
-      </div>
-        
-      <div class="w-full flex flex-auto gap-4">
-        <div class="flex bg-gray-900 p-4 rounded-xl w-1/5 justify-center items-center font-family-poppins font-bold" > 
-          <span class="mr-2">Upcoming</span>
-          <span class="text-red-600 font-bold"></span>
-        </div>
-
-        <div class="flex bg-gray-900 p-1 rounded-xl w-full gap-1">
-          <p class="w-1/3 flex items-center justify-end font-bold">Persib Bandung</p>
-          <p class="w-1/5 flex items-center justify-center">Logo</p>
-          <div class="w-1/8 items-center justify-center text-center bg-white my-2 rounded-xl text-black font-bold flex">
-            <p>0</p>
-            <p>:</p>
-            <p>0</p>
-          </div>
-          <p class="w-1/5 flex items-center justify-center">Logo</p>
-          <p class="w-1/3 flex items-center justify-start font-bold">Persija Jakarta</p>
-        </div>
+        <p class="team-logo">Logo</p>
+        <p class="team team-right">Persija Jakarta</p>
       </div>
     </div>
+
+    <!-- Match Card 3 -->
+    <div class="match-card">
+      <div class="match-status">
+        <span>LIVE</span>
+        <span class="match-minute">53'</span>
+      </div>
+      <div class="match-info">
+        <p class="team team-left">Persib Bandung</p>
+        <p class="team-logo">Logo</p>
+        <div class="score-box">
+          <p>1</p>
+          <p>:</p>
+          <p>1</p>
+        </div>
+        <p class="team-logo">Logo</p>
+        <p class="team team-right">Persija Jakarta</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Match Section: Liga 2 Indonesia -->
+  <div class="match-section">
+    <div class="section-header">
+      <h2 class="league-title">Liga 2 Indonesia</h2>
+    </div>
+
+    <!-- Match Card 1 -->
+    <div class="match-card">
+      <div class="match-status">
+        <span>LIVE</span>
+        <span class="match-minute">53'</span>
+      </div>
+      <div class="match-info">
+        <p class="team team-left">Persib Bandung</p>
+        <p class="team-logo">Logo</p>
+        <div class="score-box">
+          <p>1</p>
+          <p>:</p>
+          <p>1</p>
+        </div>
+        <p class="team-logo">Logo</p>
+        <p class="team team-right">Persija Jakarta</p>
+      </div>
+    </div>
+
+    <!-- Match Card 2 (Finished) -->
+    <div class="match-card">
+      <div class="match-status bg-gray-900">
+        <span>Finished</span>
+        <span class="match-minute"></span>
+      </div>
+      <div class="match-info bg-gray-900">
+        <p class="team team-left">Persib Bandung</p>
+        <p class="team-logo">Logo</p>
+        <div class="score-box">
+          <p>1</p>
+          <p>:</p>
+          <p>1</p>
+        </div>
+        <p class="team-logo">Logo</p>
+        <p class="team team-right">Persija Jakarta</p>
+      </div>
+    </div>
+
+    <!-- Match Card 3 (Upcoming) -->
+    <div class="match-card">
+      <div class="match-status bg-gray-900">
+        <span>Upcoming</span>
+        <span class="match-minute"></span>
+      </div>
+      <div class="match-info bg-gray-900">
+        <p class="team team-left">Persib Bandung</p>
+        <p class="team-logo">Logo</p>
+        <div class="score-box">
+          <p>0</p>
+          <p>:</p>
+          <p>0</p>
+        </div>
+        <p class="team-logo">Logo</p>
+        <p class="team team-right">Persija Jakarta</p>
+      </div>
+    </div>
+  </div>
 </div>

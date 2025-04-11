@@ -113,3 +113,117 @@
 .clip-path-custom {
     clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
 }
+
+/* homepage */
+.homepage {
+  @apply text-white w-full flex flex-col px-4;
+}
+
+.home-banner {
+  @apply min-w-full h-1/3 object-cover;
+}
+
+.match-filters {
+  @apply flex justify-between items-center mt-6;
+}
+
+.filter-buttons {
+  @apply space-x-2;
+}
+
+.filter-button {
+  @apply bg-green-600 px-7 py-2 border border-green-600 rounded-xl hover:bg-green-700 dark:border-green-600 hover:dark:bg-gray-900;
+}
+
+.current-date {
+  @apply text-white font-bold bg-green-600 dark:bg-green-600 px-7 py-2 rounded-xl;
+}
+
+.match-section {
+  @apply w-full flex flex-col mt-6 space-y-3;
+}
+
+.section-header {
+  @apply py-4;
+}
+
+.league-title {
+  @apply text-green-600 font-bold text-3xl;
+}
+
+.match-card {
+  @apply w-full flex flex-auto gap-4;
+}
+
+.match-status {
+  @apply flex bg-green-600 dark:bg-green-900 p-4 rounded-xl w-1/5 justify-center items-center font-bold font-[Poppins];
+}
+
+.match-minute {
+  @apply text-red-600 font-bold ml-2;
+}
+
+.match-info {
+  @apply flex bg-green-600 dark:bg-green-900 p-1 rounded-xl w-full gap-1;
+}
+
+.team {
+  @apply flex items-center font-bold;
+}
+
+.team-left {
+  @apply w-1/3 justify-end;
+}
+
+.team-right {
+  @apply w-1/3 justify-start;
+}
+
+.team-logo {
+  @apply w-1/5 flex items-center justify-center;
+}
+
+.score-box {
+  @apply w-1/8 flex items-center justify-center text-center bg-white my-2 rounded-xl text-black font-bold;
+}
+
+/* match_stats */
+.match-stats {
+  @apply flex flex-col m-8 rounded-xl;
+}
+
+.match-stats-header {
+  @apply flex w-full justify-between mb-3;
+}
+
+.team-name-left {
+  @apply text-2xl text-green-700 dark:text-white pl-8;
+}
+
+.team-name-right {
+  @apply text-2xl text-green-700 dark:text-white pr-8;
+}
+
+.match-stats-body {
+  @apply flex flex-col w-full;
+}
+
+.stats-row {
+  @apply flex justify-between px-5 py-2;
+}
+
+.dark-row {
+  @apply bg-[#062D2D] text-[#D0EFD0];
+}
+
+.light-row {
+  @apply bg-[#D0EFD0] text-[#062D2D];
+}
+
+.rounded-top {
+  @apply rounded-t-2xl;
+}
+
+.rounded-bottom {
+  @apply rounded-b-2xl;
+}
