@@ -6,10 +6,65 @@
   background-color: #041B1B;
 }
 
-.aside {
-  background-color: #181D28;
+.secondary-500 {
+  background-color: #0D1018;
 }
 
+/* Aside */
+.aside {
+  @apply bg-gray-300 p-4 rounded-2xl dark:bg-[#181D28];
+}
+
+.aside-logo {
+  @apply inline-block w-6 h-6 mr-2 rounded-full bg-center;
+}
+
+.aside-header-text {
+  @apply text-xl font-bold text-[#15AF15] mb-4;
+}
+
+.aside-item {
+  @apply flex items-center space-x-2 px-3 py-2 rounded-xl text-gray-900;
+}
+
+.aside-item:hover {
+  @apply bg-gradient-to-l from-green-200 to-green-500;
+  transform: scale(1.05);
+}
+
+.aside-item-text {
+  @apply font-medium text-sm text-gray-900 dark:text-white;
+}
+
+.aside-footer {
+  @apply flex items-end justify-end text-right pb-0 mb-0;
+  color: #15AF15;
+}
+/* Aside End */
+
+/* Article */
+.aside-article-list {
+  @apply mt-4 space-y-4;
+}
+
+.aside-article-item {
+  @apply flex items-center space-x-3;
+}
+
+.aside-article-image {
+  @apply w-12 h-12 rounded-md object-cover;
+}
+
+.aside-article-title {
+  @apply text-gray-900 dark:text-white text-sm font-semibold;
+}
+
+.aside-article-date {
+  @apply dark:text-gray-400 text-gray-600 text-xs;
+}
+/* Artiicle End */
+
+/* Match Center Sub Menu */
 .sub-menu {
   @apply border-2 border-green-700 flex p-2 w-1/5 rounded-xl items-center text-green-700 bg-white dark:bg-gray-900 dark:text-white;
   transition: transform 0.3s ease-in-out;
@@ -23,41 +78,37 @@
 .sub-menu img {
   @apply inline-block w-8 h-8 m-1 rounded-full;
 }
+/* Match Center Sub Menu End */
 
-/* Card container */
+/* Player Card */
 .card {
   @apply rounded-lg overflow-hidden w-80 mb-8 border border-gray-200 dark:border-gray-700;
 }
 
-/* Card header */
 .card-header {
   @apply p-4 flex items-center bg-gray-300 dark:bg-gray-800;
 }
 
-/* Card header text */
 .card-header-text {
   @apply text-lg font-bold dark:text-white;
 }
 
-/* Card body */
 .card-body {
   @apply p-4 bg-white dark:bg-gray-900;
 }
 
-/* Card body text */
 .card-body-text {
   @apply text-lg font-bold dark:text-white;
 }
 
-/* Card footer */
 .card-footer {
   @apply flex items-center border-b border-gray-300 py-2 dark:text-white dark:border-gray-700;
 }
 
-/* Card footer text */
 .card-footer-text {
   @apply text-xl font-bold dark:text-white;
 }
+/* Player Card End */
 
 .clip-path-custom {
     clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
